@@ -3,3 +3,5 @@
 dmidecode
 
 lscpu
+
+lshw -c net -short
