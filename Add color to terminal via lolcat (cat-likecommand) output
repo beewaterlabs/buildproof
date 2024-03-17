@@ -1,0 +1,23 @@
+#lolcat [routes.yaml] - to add color to terminal:
+#Goo  to where you have lolcat installed and make a "test" folder:
+#Then use nano to create/edit "routes.yaml" 
+
+nano routes.yaml
+# Copy the following into the .yaml file:
+
+routes:
+
+collection:
+  /:
+     permalink: /{slug}/
+     template: index
+
+taxonomies:
+  tag: /tag/{slug}/
+  author: /author/{slug}/
+
+# Members
+
+----End-Of-File----
+
+#Now you can lolcat files with color, enjoy!
