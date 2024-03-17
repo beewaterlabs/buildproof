@@ -1,8 +1,12 @@
 #lolcat [routes.yaml] - to add color to terminal:
-#Goo  to where you have lolcat installed and make a "test" folder:
+#Go to where you have lolcat installed and make a "test" folder: 
+
+/root/lolcat/test
+
 #Then use nano to create/edit "routes.yaml" 
 
 nano routes.yaml
+
 # Copy the following into the .yaml file:
 
 routes:
@@ -21,3 +25,15 @@ taxonomies:
 ----End-Of-File----
 
 #Now you can lolcat files with color, enjoy!
+#Example -> lolcat David_Cross\'s_TV_Show_Rec\'s.txt 
+David Cross TV Rec's:
+Yellow Jackets - not seen
+Rec's:
+pen15 - well done
+Reservation dogs - relly good
+The curse - unlike anything I've seen - Hulu
+
+#This  will show a differeent color effect each run!
+#Will need to find a way to post screenshots in GitHub if possible...
+#Feel free to contribute!
+
