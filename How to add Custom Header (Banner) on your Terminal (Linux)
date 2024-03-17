@@ -1,0 +1,61 @@
+#Follow instructions from the linkk below, enjoy: 
+##https://arvndvv.medium.com/custom-header-banner-on-your-terminal-linux-4abfe7f5b052
+
+ReQuirements 👾
+
+    FIGlet
+    lolcat
+
+FIGlet
+
+FIGlet is a computer program that generates text banners, in a variety of typefaces, composed of letters made up of conglomerations of smaller ASCII characters.
+
+    sudo apt-get install figlet
+
+You can know the full details and functioning of FIGlet by man command
+
+    man figlet
+
+Syntax for generating banner
+
+figlet -f {fontname} “TEXT FOR BANNER”
+
+to know the font names available along with how they look, use this command in terminal:
+
+showfigfonts — it shows font with default text
+
+showfigfonts “SOME TEXT” — it shows font with custom text
+
+As FIGlet being setup, now lets add some more fonts to our arsenal.
+
+follow these commands:
+
+    cd /usr/share
+    sudo git clone https://github.com/xero/figlet-fonts
+    sudo mv figlet-fonts/* figlet && sudo rm –rf figlet-fonts
+
+Now if you try showfigfonts again, you will see lot more fonts.
+
+LOLCAT
+
+Lolcat provide color for the text we display on terminal.
+
+    git clone https://github.com/busyloop/lolcat
+    cd lolcat/bin/ && sudo gem install lolcat
+
+for help with lolcat command, use
+
+    lolcat -h
+
+The Final Steps
+
+    sudo gedit /etc/bash.bashrc
+
+This will open up a text editor with lot of script in it, scroll to the bottom and
+
+add the following:
+
+    clear
+    figlet -c -f {font_you_chose} “Text_to_be_displayed” | lolcat
+
+Done! save it and open a new terminal to see the banner there. You can add your own customization.
