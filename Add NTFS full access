@@ -1,0 +1,4 @@
+#You may also be interested in some extras like NTFS read/write access, especially if you're dual-booting, and/or need to access devices that (most likely) have Windows. In that case, you will need the NTFS libraries.
+#source-> https://www.dedoimedo.com/computers/rocky-linux-8-perfect-desktop.html
+
+sudo dnf install ntfs-3g ntfsprogs -y
