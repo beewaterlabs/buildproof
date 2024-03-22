@@ -23,7 +23,10 @@ Calculated Hardware Clock drift is 0.000000 seconds
 
 Golden Ticket:
 
-sudo timedatectl set-time UTC
+#sudo timedatectl set-time UTC (Did not work in Ubuntu 22.04)
+
+#Set the time standard of the hardware clock to UTC:
+timedatectl set-local-rtc 0
 sudo hwclock --utc --systohc
 
 The first command sets the system time to UTC time using the timedatectl command. The sudo command is required to run this command with administrative privileges. The set-time option is used to set the system time, and the UTC argument specifies that the system time is in UTC.
